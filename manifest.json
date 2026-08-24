@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Ramsey Classroom Unlocked",
+  "version": "1.0.0",
+  "description": "This extensions allows for the viewing of fill in the blank answers and long-answer grading prompts for Ramsey Classroom",
+  "icons": {},
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Ramsey Classroom Unlocked",
+    "default_icon": {}
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.ramseyclassroom.com/*"],
+
+      "js": ["main.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["images/eye.png"],
+    "matches": ["<all_urls>"]
+  }],
+  "permissions": ["scripting"],
+  "host_permissions": ["https://www.ramseyclassroom.com/api/v3/course_content_items/*"]
+}
