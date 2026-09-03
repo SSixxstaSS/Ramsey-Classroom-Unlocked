@@ -5,7 +5,6 @@
   "description": "This extensions allows for the viewing of fill in the blank answers and long-answer grading prompts for Ramsey Classroom",
   "icons": {},
   "action": {
-    "default_popup": "popup.html",
     "default_title": "Ramsey Classroom Unlocked",
     "default_icon": {}
   },
